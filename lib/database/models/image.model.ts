@@ -22,6 +22,7 @@ const Image = models?.Image || model('Image', ImageSchema);
 export default Image
 
 export interface IImage extends Document {
+    _id: string;
     title: string;
     transformationType: string;
     publicId: string;
